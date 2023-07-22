@@ -11,7 +11,6 @@ public class Program {
 		String path = "c:\\temp\\in.txt";
 
 		try (FileReader fr = new FileReader(path) ; BufferedReader br = new BufferedReader(fr)) {
-
 			String line = br.readLine();
 
 			while (line != null) {
@@ -19,7 +18,6 @@ public class Program {
 				line = br.readLine();
 			}
 		}
-
 		catch (IOException e) {
 			System.out.println("Erro: " + e.getMessage());
 		}
